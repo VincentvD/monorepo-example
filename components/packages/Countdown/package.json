@@ -1,0 +1,19 @@
+{
+  "name": "influx-simple-countdown",
+  "version": "0.0.1",
+  "description": "Provides a countdown component that calls a specified action after the countdown has been reached",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "update": "npm update -s",
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.js -p --progress --colors"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "cross-env": "^5.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
