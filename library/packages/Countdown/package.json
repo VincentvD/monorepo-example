@@ -1,0 +1,18 @@
+{
+  "name": "influx-simple-countdown",
+  "version": "0.0.3",
+  "description": "Provides a countdown component that calls a specified action after the countdown has been reached",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "update": "npm update -s",
+    "build": "../../node_modules/.bin/rollup -c ../../rollup.config.js"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "gitHead": "e55edfa1b5f4d7d07e81728908df00e2a5838fd5"
+}
