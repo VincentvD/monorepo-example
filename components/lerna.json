@@ -1,7 +1,0 @@
-{
-    "lerna": "3.0.0-rc.0",
-    "version": "independent",
-    "npmClient": "npm",
-    "npmClientArgs": ["--production", "--no-optional"],
-    "useWorkspaces": false
-  }
