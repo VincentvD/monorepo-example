@@ -1,20 +1,12 @@
 {
   "presets": [
-    "react",
+    ["env", {
+      "modules": false
+    }],
     "stage-0",
-    [
-      "env",
-      {
-        "modules": false,
-        "useBuiltIns": true
-      }
-    ]
+    "react"
   ],
   "plugins": [
-    "external-helpers",
-    "transform-class-properties",
-    "transform-object-rest-spread",
-    "transform-react-jsx-self",
-    "transform-react-jsx-source"
+    "external-helpers"
   ]
 }

@@ -1,24 +1,28 @@
-import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
+import external from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
+import resolve from 'rollup-plugin-node-resolve';
+import url from 'rollup-plugin-url';
 
 export default {
-  input: 'index.js',
-  output: {
-    file: 'dist/bundle.js',
-    format: 'cjs'
-  },
+  input: 'src/index.js',
   external: [
     'react',
     'react-dom',
     'prop-types'
   ],
   plugins: [
-    resolve({
-      extensions: ['.js', '.jsx']
+    external(),
+    postcss({
+      modules: true
     }),
+    url(),
     babel({
       exclude: 'node_modules/**'
+    }),
+    resolve({
+      extensions: ['.js', '.jsx']
     }),
     commonjs()
   ]
