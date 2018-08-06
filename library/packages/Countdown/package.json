@@ -1,17 +1,17 @@
 {
   "name": "influx-simple-countdown",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provides a countdown component that calls a specified action after the countdown has been reached",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",  
+  "jsnext:main": "dist/index.es.js",
   "author": "",
   "license": "ISC",
   "scripts": {
     "clean": "rimraf dist",
     "lint": "eslint ./src ./test -c eslint.config.js",
-    "test": "jest -c jest.config.js .",    
-    "compile": "./node_modules/.bin/rollup -c rollup.config.js",    
+    "test": "jest -c jest.config.js .",
+    "compile": "./node_modules/.bin/rollup -c rollup.config.js",
     "update": "npm update -s"
   },
   "dependencies": {
