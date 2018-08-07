@@ -1,0 +1,126 @@
+{
+  "env": {
+    "es6": true,
+    "jasmine": true,
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "expect": false,
+    "jest": false
+  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+
+  "rules": {
+    "linebreak-style": "off",
+    "brace-style": ["error", "1tbs"],
+    "comma-dangle": ["error", "never"],
+    "max-len": ["warn", 140],
+
+    "no-confusing-arrow": ["warn", { "allowParens": true }],
+
+    "no-use-before-define": ["error", "nofunc"],
+
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          ["+", "-", "*", "/", "%", "**"],
+          ["&", "|", "^", "~", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
+
+    "object-curly-newline": ["error", { "consistent": true, "multiline": true }],
+
+    "arrow-body-style": ["off", "always"],
+
+    "import/named": ["error"],
+
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": [
+          "test/**/*",
+          "**/*-spec.js",
+          "**/*.stories.js"
+        ]
+      }
+    ],
+
+    "import/no-named-as-default-member": ["warn"],
+    "import/no-named-as-default": ["off"],
+    "import/extensions": ["off", { "js": "never" }],
+
+    "import/order": ["error", { "newlines-between": "ignore" }],
+    "react/display-name": ["warn", { "ignoreTranspilerName": false }],
+
+    "react/jsx-max-props-per-line": ["error", { "maximum": 8 }],
+
+    "react/jsx-handler-names": [
+      "error",
+      {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on"
+      }
+    ],
+
+    "react/sort-prop-types": [
+      "error",
+      {
+        "ignoreCase": true,
+        "callbacksLast": true,
+        "requiredFirst": true
+      }
+    ],
+
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "ignoreCase": true,
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "shorthandLast": false
+      }
+    ],
+    "react/no-direct-mutation-state": 2,
+
+    "react/prefer-stateless-function": 1,
+
+    "react/no-unused-prop-types": [
+      "warn",
+      {
+        "skipShapeProps": true
+      }
+    ],
+
+    "react/jsx-no-target-blank": 0,
+
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+
+    "react/forbid-component-props": ["error", { "forbid": ["style"] }],
+
+    "react/forbid-prop-types": [
+      "error",
+      { "forbid": ["any", "array", "object"] }
+    ],
+
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": [
+          "t"
+        ]
+      }
+    ],
+
+    "jsx-a11y/no-static-element-interactions": 0,
+
+    "jsx-a11y/label-has-for": 0
+  }
+}

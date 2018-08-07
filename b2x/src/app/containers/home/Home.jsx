@@ -2,10 +2,10 @@ import React from 'react';
 
 import Countdown from 'influx-simple-countdown';
 
-import logo from './react.svg';
+import logo from '../../../img/react.svg';
 import './Home.css';
 
-class Home extends React.Component {
+export default class Home extends React.Component {
   render() {
     return (
       <div className="Home">
@@ -52,5 +52,3 @@ Community Slack
     );
   }
 }
-
-export default Home;

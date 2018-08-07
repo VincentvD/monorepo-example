@@ -12,6 +12,7 @@
     "lint": "eslint ./src ./test -c eslint.config.js",
     "test": "jest -c jest.config.js .",
     "compile": "./node_modules/.bin/rollup -c rollup.config.js",
+    "watch": "./node_modules/.bin/rollup -c rollup.config.js --watch",
     "update": "npm update -s"
   },
   "dependencies": {
