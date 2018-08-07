@@ -1,6 +1,6 @@
 {
   "name": "influx-simple-countdown",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Provides a countdown component that calls a specified action after the countdown has been reached",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
