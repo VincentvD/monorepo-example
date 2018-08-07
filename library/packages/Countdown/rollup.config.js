@@ -1,19 +1,18 @@
-
-import baseConfig from '../../rollup.config';
-import pkg from './package.json';
+import baseConfig from '../../rollup.config'
+import pkg from './package.json'
 
 export default {
   output: [
     {
       file: `${pkg.main}`,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: `${pkg.module}`,
       format: 'es',
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
-  ...baseConfig
-};
+  ...baseConfig,
+}
