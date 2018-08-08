@@ -10,11 +10,12 @@
   ],
   "scripts": {
     "install": "npm run bootstrap",
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap --hoist && npm audit fix",
     "updated": "lerna updated",
     "compile": "lerna run lint && lerna run compile",
     "clean": "lerna run clean",
     "test": "lerna run test",
+    "lint": "lerna run lint",
     "update-packages": "lerna run update",
     "publish": "npm run compile && lerna publish"
   },

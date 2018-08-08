@@ -7,7 +7,7 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js",
-    "lint": "eslint 'src/**/*.js*' --ext=.js,.jsx --max-warnings=0",
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js*' --ext=.js,.jsx",
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {

@@ -13,7 +13,7 @@
     "compile": "./node_modules/.bin/rollup -c rollup.config.js",
     "watch": "./node_modules/.bin/rollup -c rollup.config.js --watch",
     "update": "npm update -s",
-    "lint": "./node_modules/.bin/eslint 'src/**/*.js*' --ext=.js,.jsx --max-warnings=0"
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js*' --ext=.js,.jsx"
   },
   "dependencies": {
     "prop-types": "^15.6.2",

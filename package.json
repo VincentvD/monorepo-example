@@ -14,6 +14,9 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-watch": "^4.0.2"
+    "eslint-watch": "^4.0.2",
+    "eslint-config-react-app": "2.1.0",
+    "eslint-plugin-flowtype": "2.50.0",
+    "babel-eslint": "8.2.6"
   }
 }
