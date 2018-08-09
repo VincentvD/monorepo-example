@@ -17,17 +17,21 @@
     "test": "lerna run test",
     "lint": "lerna run lint",
     "update-packages": "lerna run update",
-    "publish": "npm run compile && lerna publish"
+    "publish": "npm run compile && lerna publish",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.10",
     "ajv": "6.5.2",
     "babel-core": "^6.26.3",
     "babel-eslint": "~7.2.3",
+    "babel-helpers": "^6.24.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.1.4",
+    "lerna": "^3.0.0-rc.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "^1.1.4",
@@ -37,7 +41,6 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-url": "^1.4.0",
-    "lerna": "^3.0.0-rc.0"
+    "rollup-plugin-url": "^1.4.0"
   }
 }
