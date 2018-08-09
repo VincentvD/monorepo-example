@@ -54,5 +54,5 @@ Countdown.propTypes = {
 
 Countdown.defaultProps = {
   onComplete: undefined,
-  countStart: 60,
+  countStart: 300,
 }
